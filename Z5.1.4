@@ -1,0 +1,31 @@
+/*   Name:Project 5.14
+   Author:Kostya Silchuk, group 109.
+   Description:Laboratory work N 5 Generating random numbers. Working with one-dimensional arrays./ variant 13*/
+    #include <iostream>   
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <time.h>
+    #include <conio.h>
+    using namespace std;
+    int main ()
+  {  const  int n=7;
+  int A,B,sum,i,arr;
+    printf ("\n\t\tGenerating random numbers\n\n\n");
+    printf ("Enter the number of sequence numbers:  n = ");
+    scanf ("%d", &n);
+    srand (time(NULL) ); 
+    printf("\n\n\tReal random numbers in the interval[A,B]:\n");
+    cout<<"to enter A and B:"<<endl;
+    cin>>A;
+    cin>>B;
+    sum>=B;
+    printf( " sum:\n");
+    cout<<sum<<endl;
+    for (int i=0; i<n; i++)
+    {if(i%10==0) printf("\n");
+    float number=(float)rand()/RAND_MAX*A+B-A;
+    printf("i%7.1f", number);
+}
+return 0;
+}
+ 
